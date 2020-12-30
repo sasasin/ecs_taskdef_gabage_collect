@@ -1,6 +1,5 @@
 #!/bin/bash
-
-MAX_ITEMS=10
+MAX_ITEMS=100
 
 ecs-list-task-def()
 {
