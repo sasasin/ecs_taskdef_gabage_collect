@@ -21,7 +21,7 @@ Listup unused ECS task definitions.
 $ ./ecs_list_unused_task_defs.sh all_task_def.sh running_task_def.sh > unused_task_def.txt
 ```
 
-DeRegister ECS task definitions.
+Deregister ECS task definitions.
 
 ```
 $ ./ecs_deregister_unused_task_def.sh unused_task_def.sh
