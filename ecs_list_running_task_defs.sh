@@ -3,7 +3,6 @@
 aws ecs list-clusters \
 | jq -r '.clusterArns[]' \
 | while read ECS_CLUSTER; do
-	#echo $ECS_CLUSTER
 	aws ecs list-services --cluster $ECS_CLUSTER \
 	| jq -r '.serviceArns[]' \
 	| while read ECS_SERVICE; do
